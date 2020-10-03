@@ -44,7 +44,7 @@ public class OcrGraphic extends GraphicOverlay.Graphic {
         rectPaint.setStrokeWidth(4.0f);
 
         textPaint.setColor(TEXT_COLOR);
-        textPaint.setTextSize(50.0f);
+        textPaint.setTextSize(40.0f);
     }
 
     private boolean showText;
@@ -102,7 +102,7 @@ public class OcrGraphic extends GraphicOverlay.Graphic {
             float bottom = translateY(currentText.getBoundingBox().bottom);
             if (showText) {
                 String resultTextTemp = currentText.getValue();
-                if (resultTextTemp.length()==17){
+                if (resultTextTemp.length()==20){
                     canvas.drawText(resultTextTemp, left, bottom, textPaint);
                 }
                 
