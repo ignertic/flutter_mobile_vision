@@ -102,7 +102,7 @@ public class OcrGraphic extends GraphicOverlay.Graphic {
             float bottom = translateY(currentText.getBoundingBox().bottom);
             if (showText) {
                 String resultTextTemp = currentText.getValue();
-                if (resultTextTemp.length==17){
+                if (resultTextTemp.length()==17){
                     canvas.drawText(resultTextTemp, left, bottom, textPaint);
                 }
                 
